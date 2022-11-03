@@ -1,0 +1,125 @@
+.App {
+    text-align: center;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  .tableS{
+    margin: 50px auto;
+    width: 100px;
+    border-collapse: collapse;
+    border-spacing: 20px;
+
+    
+  }
+  table, th, td {
+    margin: 20px 40px;
+    padding: 10px 20px;
+
+    
+  }
+  thead > tr{
+    
+      /* background-color: #04AA6D;
+      color: white; */
+      cursor: pointer;
+      margin: 10px;
+      font-weight: bolder;
+
+    
+  }
+  th, td {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 5px;
+  }
+  tbody tr:hover {background-color: coral;}
+  table {
+    border-collapse: collapse;
+  }
+  
+   th tr td{
+    border: 1px solid black;
+    /* margin-bottom: 10px; */
+    margin: 0 20px;
+  }
+  button{
+    background-color: rgb(224, 90, 90);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    margin: 10px 250px;
+  }
+  
+  .gold{
+    width: 10px;
+    height: 10px;
+    background-color: gold;
+    border-radius: 50%;
+  }
+  .silver{
+    width: 10px;
+    height: 10px;
+    background-color: rgb(32, 28, 28);
+    border-radius: 50%;
+    margin: 10px 5px;
+
+  }
+  .bronze{
+    width: 5px;
+    height: 5px;
+    background-color: brown;
+    border-radius: 50%;
+    margin: 10px;
+    gap: 5px;
+    column-gap: 40px;
+}
+
+.top-div{
+  margin: 10px 400px;
+  border-bottom: 1px solid #ddd;
+  width: 500px;
+  font-size: large;
+  font-weight: bold;
+
+}
+ 
+
+
+
+
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
