@@ -12,17 +12,19 @@
   
   ;; (for [[index item] (map-indexed (fn [index item] [index item]) medals)]
   ;;   (def obj {"gold" 10 "silver" 20 "bronze" 10 "total" 50})
-
-  [:tr
-   [:td (+ index 1)]
-   [:td [:img {:alt code :width 20 :height 15 :src (str "https://countryflagsapi.com/png/" code)}]]
-   [:td gold]
-   [:td]
-   [:td silver]
-   [:td]
-   [:td bronze]
-   [:td]
-   [:td total]]
+ (if  (< index 10) 
+       [:tr
+        [:td (+ index 1)]
+        [:td [:img {:alt code :width 20 :height 15 :src (str "https://countryflagsapi.com/png/" code)}]]
+        [:td gold]
+        [:td]
+        [:td silver]
+        [:td]
+        [:td bronze]
+        [:td]
+        [:td total]]
+)
+  
 
   )
 
@@ -51,6 +53,7 @@
         [:td]
         [:td {:on-click #(re-frame/dispatch [::events/change-sort :total])} "Total" ]]]
       [:td]
+      
       (when @show-twirly [:img {:width 250 :height 230 :margin 20 :src (str "https://cdn.dribbble.com/users/255512/screenshots/2251246/gifloader.gif")}])
       [:tbody
        #_{:clj-kondo/ignore [:invalid-arity]}
