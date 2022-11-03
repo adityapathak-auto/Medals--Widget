@@ -13,14 +13,3 @@
                                           :silver (if (> (:gold countryA) (:gold countryB)) -1 1)
                                           :bronze (if (> (:gold countryA) (:gold countryB)) -1 1)))) countries))
 
-
-
-
-
-
-
-
-
-
-
-

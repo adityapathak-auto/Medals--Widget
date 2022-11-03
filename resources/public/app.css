@@ -56,14 +56,15 @@
   }
   
   .gold{
-    width: 10px;
-    height: 10px;
+    width: 5px;
+    height: 5px;
     background-color: gold;
     border-radius: 50%;
+    margin: 5px 10px;
   }
   .silver{
-    width: 10px;
-    height: 10px;
+    width: 5px;
+    height: 5px;
     background-color: rgb(32, 28, 28);
     border-radius: 50%;
     margin: 10px 5px;
@@ -75,8 +76,7 @@
     background-color: brown;
     border-radius: 50%;
     margin: 10px;
-    gap: 5px;
-    column-gap: 40px;
+    
 }
 
 .top-div{

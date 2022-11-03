@@ -15,7 +15,7 @@
 
   [:tr
    [:td (+ index 1)]
-   [:td [:img {:alt code :width 50 :height 30 :src (str "https://countryflagsapi.com/png/" code)}]]
+   [:td [:img {:alt code :width 20 :height 15 :src (str "https://countryflagsapi.com/png/" code)}]]
    [:td gold]
    [:td]
    [:td silver]
@@ -24,7 +24,7 @@
    [:td]
    [:td total]]
 
-)
+  )
 
 
 
